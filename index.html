@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>مواقيت الصلاة</title>
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+    <!-- start google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end google fonts -->
+    <!-- start css files -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- end css files -->
+  </head>
+  <body>
+    <div class="timing-city text-center py-4 vh-100">
+      <div class="container">
+        <h1 class="border-bottom shadow p-3 rounded-3">
+          مواقيت الاذان حسب التوقيت المحلي لمدينة القاهرة
+        </h1>
+        <h1 class="mb-0">Egypt - <span class="city"></span></h1>
+        <div class="current-time text-bg-dark p-2 mt-3 rounded fs-4"></div>
+
+        <!-- start date -->
+        <div
+          class="date fs-5 p-3 d-flex justify-content-between border-bottom border-dark"
+        >
+          <div class="gregorian"></div>
+          <div class="day"></div>
+          <div class="hijri"></div>
+        </div>
+        <!-- end date -->
+
+        <!-- start times list -->
+        <div class="times mt-3"></div>
+        <!-- end times list -->
+      </div>
+    </div>
+
+    <!-- javascript files -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
