@@ -2,7 +2,7 @@
 let city = "Cairo";
 set_city(city);
 set_current_time();
-const end_point = `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=egypt`;
+const end_point = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=egypt`;
 axios
     .get(end_point)
     .then(({ data }) => {
